@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Honey Bear
   productName: GMTK2024
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -704,7 +704,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
   cloudProjectId: 394d14d9-9a96-4306-b228-a49d9758bd16
   framebufferDepthMemorylessMode: 0
