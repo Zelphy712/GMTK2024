@@ -287,7 +287,7 @@ MonoBehaviour:
   maxSpeed: 10
   maxAcceleration: 20
   maxAirAcceleration: 15
-  jumpHeight: 5
+  jumpHeight: 8
   maxAirJumps: 0
   maxGroundAngle: 25
   moveAction: {fileID: 2657496111491866718, guid: b7532f3360220a84daa2eb66dfe5c672, type: 3}
