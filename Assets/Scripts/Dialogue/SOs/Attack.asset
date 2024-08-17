@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b501d77a4aee9459a44a9bb9c0f0dd, type: 3}
   m_Name: Attack
   m_EditorClassIdentifier: 
-  speakerName: Philomena
+  speakerName: Philomena 3
   paragraphs:
   - Simply charging toward your goals is never enough though, you fool! In order
     to lasso Lucifer, you'll have to start small and work your way up!

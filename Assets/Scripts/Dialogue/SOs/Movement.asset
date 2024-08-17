@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b501d77a4aee9459a44a9bb9c0f0dd, type: 3}
   m_Name: Movement
   m_EditorClassIdentifier: 
-  speakerName: Philomena
+  speakerName: Philomena 2
   paragraphs:
   - To run toward to goals, use D. To run away in cowardice, use A. To leap over
     hurdles in your way, use Space Bar.
