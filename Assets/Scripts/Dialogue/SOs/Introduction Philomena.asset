@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96b501d77a4aee9459a44a9bb9c0f0dd, type: 3}
-  m_Name: testConvo
+  m_Name: Introduction Philomena
   m_EditorClassIdentifier: 
   speakerName: Philomena
   paragraphs:
@@ -21,3 +21,5 @@ MonoBehaviour:
     massa. Praesent dignissim nulla in finibus posuere. Pellentesque pharetra commodo
     placerat. Vivamus ultrices rhoncus condimentum. In ex est, porta ut aliquam at,
     ultricies sit amet mauris. Vestibulum faucibus ullamcorper varius.
+  - Oh, my pearls! Thank you for your help! I'd love to see someone here promoted
+    before I die again. Let me help you along!
