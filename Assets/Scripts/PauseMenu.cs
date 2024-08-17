@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PauseMenuUI;
-    public bool isPaused;
+    public static bool isPaused;
 
     // Start is called before the first frame update
     void Start()
