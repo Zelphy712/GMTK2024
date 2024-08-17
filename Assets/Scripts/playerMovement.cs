@@ -120,6 +120,8 @@ public class MovingSphere : MonoBehaviour {
 				jumpSpeed = Mathf.Max(jumpSpeed - alignedSpeed, 0f);
 			}
 			velocity += contactNormal * jumpSpeed;
+            string [] jumpSounds = {"Jump 1","Jump 2","Jump 3"};
+            AudioManager.Instance.PlaySfx(jumpSounds[Random.Range(0,jumpSounds.Length)]);
 		}
 	}
 
