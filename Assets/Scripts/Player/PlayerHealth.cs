@@ -26,6 +26,6 @@ public void TakeDamage(int damage)
     // Update is called once per frame
     void Update()
     {
-        
+        //
     }
 }
