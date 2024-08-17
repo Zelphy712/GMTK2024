@@ -19,7 +19,7 @@ public void TakeDamage(int damage)
         if (health <= 0)
         {
             print("Player is dead");
-            // Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
