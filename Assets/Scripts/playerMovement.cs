@@ -17,6 +17,11 @@ public class MovingSphere : MonoBehaviour {
     public InputActionReference moveAction;
     public InputActionReference jumpAction;
 
+    [SerializeField]
+    private Animator animator;
+    [SerializeField]
+    private SpriteRenderer sprite;
+
 
     //Private Variables
 	Rigidbody2D body;
@@ -27,6 +32,7 @@ public class MovingSphere : MonoBehaviour {
 	bool OnGround => groundContactCount > 0;
 	int jumpPhase;
 	float minGroundDotProduct;
+    private bool facingLeft = false;
 
 
     private void Start(){
@@ -65,6 +71,12 @@ public class MovingSphere : MonoBehaviour {
 		}
 
 		body.velocity = velocity;
+
+        //animation transitions
+        facingLeft = (body.velocity.x < 0);
+        animator.SetFloat("speed",Mathf.Abs(body.velocity.x));
+        animator.SetBool("facingLeft", facingLeft);
+
 		ClearState();
 	}
 
