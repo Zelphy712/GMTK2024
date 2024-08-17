@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b501d77a4aee9459a44a9bb9c0f0dd, type: 3}
   m_Name: Healing
   m_EditorClassIdentifier: 
-  speakerName: 
-  paragraphs: []
+  speakerName: Philomena
+  paragraphs:
+  - Did you get hurt fighting that little guy? It's a little pathetic if you did.
+    When you come across a glass of milk, drink it and it will heal right up. This
+    allows you to hide the shame of defeat before talking to Boss Man.
