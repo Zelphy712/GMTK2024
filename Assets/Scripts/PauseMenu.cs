@@ -54,5 +54,14 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+ public GameObject AudioSettingsMenu;
+ public void OpenAudioSettingsMenu()
+    {
+        if (AudioSettingsMenu != null)
+        {
+            AudioSettingsMenu.SetActive(true);
+        }
+    }
+    
 
 }
