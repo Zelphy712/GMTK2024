@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class AudioSettingsMenu : MonoBehaviour
 {
-   public void OpenAudioSettingsMenu()
-    {
-        if (!gameObject.activeSelf)
-        {
-            gameObject.SetActive(true);
-        }
-    }
+ 
    
 }
