@@ -34,4 +34,11 @@ public class Projectile : MonoBehaviour
         float rotationAngle = (-1) * rotationSpeed * Time.fixedDeltaTime;
         projectileRb.rotation += rotationAngle;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision){
+        if (collision.gameObject.CompareTag("Weak Point")){
+            Destroy(collision.gameObject);
+        }
+        Destroy(gameObject);
+    }
 }
