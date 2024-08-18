@@ -76,7 +76,7 @@ public class MovingSphere : MonoBehaviour {
         facingLeft = (body.velocity.x < 0);
         animator.SetFloat("speed",Mathf.Abs(body.velocity.x));
         animator.SetBool("facingLeft", facingLeft);
-
+		animator.SetBool("isJumping",!OnGround);
 		ClearState();
 	}
 
