@@ -50,4 +50,13 @@ public class playerState : MonoBehaviour
     public void CollectPearls(){
         hasCollectedPearls = true;
     }
+
+    public void TakeDamage(int damage)
+    {
+        playerHealth -= damage;
+        if (playerHealth <= 0)
+        {
+            print("player died");
+        }
+    }
 }
