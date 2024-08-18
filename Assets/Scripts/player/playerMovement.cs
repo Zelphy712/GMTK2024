@@ -51,8 +51,13 @@ public class MovingSphere : MonoBehaviour {
 
 	void Update () {
 		Vector2 playerInput;
+		if(!PauseMenu.isPaused){
 		playerInput.x = moveAction.action.ReadValue<Vector2>().x;
-        playerInput.y = 0;
+		} else
+		{
+			playerInput.x = 0;
+		}
+		playerInput.y = 0;
 		playerInput = Vector2.ClampMagnitude(playerInput, 1f);
 
         // playerInput = moveAction.ReadValue<Vector2>().GetAxis("Horizontal");
@@ -76,7 +81,7 @@ public class MovingSphere : MonoBehaviour {
         facingLeft = (body.velocity.x < 0);
         animator.SetFloat("speed",Mathf.Abs(body.velocity.x));
         animator.SetBool("facingLeft", facingLeft);
-
+		animator.SetBool("isJumping",!OnGround);
 		ClearState();
 	}
 
@@ -142,8 +147,11 @@ public class MovingSphere : MonoBehaviour {
     }
 
     private void requestJump(InputAction.CallbackContext obj){
-        desiredJump = true;
-    }
+        if(!PauseMenu.isPaused){ 
+
+		desiredJump = true;
+		}
+	}
 
 	void EvaluateCollision (Collision2D collision) {
 		for (int i = 0; i < collision.contactCount; i++) {
