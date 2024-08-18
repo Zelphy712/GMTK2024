@@ -4,9 +4,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Audio;
 
-public class MusicSlider : MonoBehaviour
+public class SFXSlider : MonoBehaviour
 {
-    [SerializeField]
+     [SerializeField]
     private AudioMixer Mixer;
     [SerializeField]
     private AudioSource AudioSource;
@@ -25,7 +25,7 @@ public class MusicSlider : MonoBehaviour
                 AudioSource.volume = Value;
                 break;
             case AudioMixMode.LinearMixerVolume:
-                Mixer.SetFloat("Volume", (-80 + Value * 70));
+                Mixer.SetFloat("Volume", (-80 + Value * 100));
                 break;
             case AudioMixMode.LogrithmicMixerVolume:
                 Mixer.SetFloat("Volume", Mathf.Log10(Value) * 20);
