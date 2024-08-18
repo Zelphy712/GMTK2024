@@ -81,7 +81,7 @@ public class MovingSphere : MonoBehaviour {
         facingLeft = (body.velocity.x < 0);
         animator.SetFloat("speed",Mathf.Abs(body.velocity.x));
         animator.SetBool("facingLeft", facingLeft);
-
+		animator.SetBool("isJumping",!OnGround);
 		ClearState();
 	}
 
@@ -125,6 +125,8 @@ public class MovingSphere : MonoBehaviour {
 				jumpSpeed = Mathf.Max(jumpSpeed - alignedSpeed, 0f);
 			}
 			velocity += contactNormal * jumpSpeed;
+            string [] jumpSounds = {"Jump 1","Jump 2","Jump 3"};
+            AudioManager.Instance.PlaySfx(jumpSounds[Random.Range(0,jumpSounds.Length)]);
 		}
 	}
 
