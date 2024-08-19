@@ -131,11 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 934aab774a8954efbbcd039f2f5bfeb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileRb: {fileID: 5032329637163030199}
-  speed: 3
+  speed: 5
+  launchAngle: 40
   projectileLife: 20
   projectileCount: 0
-  projectileRotationSpeed: 300
+  projectileRotationSpeed: 1000
 --- !u!70 &6070223032695772053
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 0.3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
