@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     public Rigidbody2D projectileRb;
     public float speed;
+    public float launchAngle;
     public float projectileLife;
     public float projectileCount;
     public float projectileRotationSpeed;
