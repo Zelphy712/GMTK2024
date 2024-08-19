@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public Rigidbody2D projectileRb;
+    private Rigidbody2D projectileRb;
     public float speed;
+    public float launchAngle;
     public float projectileLife;
     public float projectileCount;
     public float projectileRotationSpeed;
@@ -14,6 +15,15 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         projectileCount = projectileLife;
+        projectileRb = GetComponent<Rigidbody2D>();
+
+        float launchingAngleRad = launchAngle * Mathf.Deg2Rad;
+
+        float initialVelocityX = speed * Mathf.Cos(launchingAngleRad);
+        float initialVelocityY = speed * Mathf.Sin(launchingAngleRad);
+
+        projectileRb.velocity = new Vector2(initialVelocityX,initialVelocityY);
+
     }
 
     // Update is called once per frame
@@ -28,10 +38,17 @@ public class Projectile : MonoBehaviour
 
     private void FixedUpdate(){
         // xy translation
-        projectileRb.velocity = new Vector2(speed, projectileRb.velocity.y);
+        
 
         float rotationSpeed = projectileRotationSpeed;
         float rotationAngle = (-1) * rotationSpeed * Time.fixedDeltaTime;
         projectileRb.rotation += rotationAngle;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision){
+        if (collision.gameObject.CompareTag("Weak Point")){
+            Destroy(collision.gameObject);
+        }
+        Destroy(gameObject);
     }
 }
