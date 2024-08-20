@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
     private void Awake(){
         if(Instance == null){
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
         }else{
             Destroy(gameObject);
         }
@@ -31,8 +31,10 @@ public class AudioManager : MonoBehaviour
 		string sceneName = currentScene.name;
         if(sceneName == "GameplayScene"){
             PlayMusic("Level Theme");
-        }else if(sceneName == "StartMenu"){
+        }else if(sceneName == "StartMenu" || sceneName == "Credits"){
             PlayMusic("Title Screen");
+        }else if(sceneName == "EndGame"){
+            PlayMusic("Boss Theme");
         }
     }
 
