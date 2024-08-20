@@ -307,6 +307,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 6b9f379edf7267649959ea4b26c65a9c, type: 3}
   - soundName: Level Theme
     clip: {fileID: 8300000, guid: 0ea5e8bcc66a9b64ab3f5fe85618df75, type: 3}
+  - soundName: Boss Theme
+    clip: {fileID: 8300000, guid: 290ed27b1186bfb48b5d0099554ea8aa, type: 3}
   sfxSounds:
   - soundName: Bone Collect
     clip: {fileID: 8300000, guid: 6e3ea11fa45ddd34899ef94021aecf01, type: 3}

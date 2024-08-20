@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b501d77a4aee9459a44a9bb9c0f0dd, type: 3}
   m_Name: Attack
   m_EditorClassIdentifier: 
-  speakerName: Philomena 3
+  speakerName: Philomena
   paragraphs:
   - Simply charging toward your goals is never enough though, you fool! In order
     to lasso Lucifer, you'll have to start small and work your way up!
   - 'To be able to go bone to bone with ol'' Lucy, you''ll have to collect the bones
     of his underlings. Good thing you already have a bones #1 enemy: hammers! To
-    throw your hammer at Lucifer and his underlings, use Q.'
+    throw your hammer at Lucifer and his underlings, use F.'
   - Once their bones are picked clean, make sure you collect the piles to keep scaling
     yourself, or Lucifer will crush you before you've even applied for your promotion.
   - I see one of His underlings up ahead! Go surprise them now!

@@ -10,6 +10,11 @@ public class StartMenu : MonoBehaviour
     SceneManager.LoadScene("GameplayScene");
  }
 
+ public void OnCreditsButton()
+ {
+    SceneManager.LoadScene("Credits");
+ }
+
  public void OnQuitButton()
  {
     Application.Quit();
