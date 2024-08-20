@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class playerState : MonoBehaviour
 {
-    [SerializeField]
-    private bool hasCollectedPearls = false;
     [SerializeField]
     private int playerHealth = 6;
     [SerializeField]
@@ -39,24 +39,12 @@ public class playerState : MonoBehaviour
         }
     }
 
-    private void OnEnable(){
-        Pearls.OnPearlsCollected += CollectPearls;
-    }
-
-    private void OnDisable(){
-        Pearls.OnPearlsCollected -= CollectPearls;
-    }
-
-    public void CollectPearls(){
-        hasCollectedPearls = true;
-    }
-
     public void TakeDamage(int damage)
     {
         playerHealth -= damage;
         if (playerHealth <= 0)
         {
-            print("player died");
+            SceneManager.LoadScene("Game Over");
         }
     }
 }
